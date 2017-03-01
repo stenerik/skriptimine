@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# kell
+echo "Kell:" date `"%H:%M"`
+echo "Kuupäev:" `date "+%Y-%m-%d"`
+echo  "Täna on"  `date "+%A"`
+
