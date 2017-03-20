@@ -6,8 +6,8 @@ do
 echo "$ip - $?"
 ping -c 1 $ip > /dev/null
 if [ $? -eq 0 ]; then
-	echo "sees"
+	echo "$ip - sees" >> ip_kontroll
   else
-	echo "väljas"
+	echo "$ip - väljas" >> ip_kontroll
 fi
 done
