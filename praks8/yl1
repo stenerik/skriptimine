@@ -3,5 +3,11 @@
 
 for ip in 172.23.13.{20..51}
 do
- ping -c 1 $ip
+echo "$ip - $?"
+ping -c 1 $ip > /dev/null
+if [ $? -eq 0 ]; then
+	echo "sees"
+  else
+	echo "väljas"
+fi
 done
